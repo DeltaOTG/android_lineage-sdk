@@ -74,9 +74,12 @@ public class LineageSystemServer {
         for (String service : externalServices) {
             try {
                 Slog.i(TAG, "Attempting to start service " + service);
+                Slog.i(TAG, "1");
                 LineageSystemService lineageSystemService =  mSystemServiceHelper.getServiceFor(service);
+                Slog.i(TAG, "2");
                 if (context.getPackageManager().hasSystemFeature(
                         lineageSystemService.getFeatureDeclaration())) {
+                        Slog.i(TAG, "3");
                     if (coreAppsOnly() && !lineageSystemService.isCoreService()) {
                         Slog.d(TAG, "Not starting " + service +
                                 " - only parsing core apps");

@@ -102,7 +102,7 @@
     <!-- Defines external services to be started by the LineageSystemServer at boot. The service itself
          should publish as a binder services in its onStart -->
     <string-array name="config_externalLineageServices">
-        <item>org.lineageos.platform.internal.ProfileManagerService</item>
+        <item>org.lineageos.platform.internal.LineageSettingsService</item>
         <item>org.lineageos.platform.internal.LineageHardwareService</item>
         <item>org.lineageos.platform.internal.PerformanceManagerService</item>
         <item>org.lineageos.platform.internal.LineageWeatherManagerService</item>
@@ -110,7 +110,7 @@
         <item>org.lineageos.platform.internal.LineageAudioService</item>
         <item>org.lineageos.platform.internal.StyleInterfaceService</item>
         <item>org.lineageos.platform.internal.TrustInterfaceService</item>
-        <item>org.lineageos.platform.internal.LineageSettingsService</item>
+        <item>org.lineageos.platform.internal.ProfileManagerService</item>
     </string-array>
 
     <!-- The LineageSystemServer class that is invoked from Android's SystemServer -->
